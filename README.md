@@ -93,11 +93,6 @@ endmodule
 
 ### 1X4 DEMULTIPLEXER:
 ```
-/*
-Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: Vishranthi A
-RegisterNumber:  212221230124
-*/
 module demux(I,S0,S1,Y0,Y1,Y2,Y3);
 input I,S0,S1;
 output Y0,Y1,Y2,Y3;
