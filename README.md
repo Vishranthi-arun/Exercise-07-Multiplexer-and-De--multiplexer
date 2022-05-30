@@ -48,9 +48,12 @@ If the data bit D is low, the output Y1 is low. IF data bit D is high, the outpu
 If the control input changes to AB = 10, then all the gates are restricted except the third AND gate from the top. Then, data bit D is transmitted only to the output Y2; and, Y2 = Data. . The best example of 1X4 demultiplexer is IC 74155.
  
 ## Procedure
-/* write all the steps invloved */
-
-
+1.Start the module using module projname().
+2.Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+3.Use wire to assign intermediate outputs.
+4.Use and,or and not gates to get the desired output.
+5.End the module.
+6.Generate RTL realization and timing diagrams
 
 ## PROGRAM 
 ```
@@ -60,35 +63,62 @@ Developed by: Vishranthi A
 RegisterNumber: 212221230124
 */
 ```
-### multiplexor
+### 4X1 MULTIPLEXER:
 ```
+module mux(I0,I1,I2,I3,S0,S1,Y);
+input I0,I1,I2,I3,S0,S1;
+output Y;
+wire S0C,S1C;
+not(S0C,S0);
+not(S1C,S1);
+wire P,Q,R,S;
+and(P,S0C,S1C,I0);
+and(Q,S0C,S1,I1);
+and(R,S0,S1C,I2);
+and(S,S0,S1,I3);
+or(Y,P,Q,R,S);
+endmodule
+```
+## RTL LOGIC
+![170915735-40d558a0-c952-4e68-965e-a9ea1890d342](https://user-images.githubusercontent.com/93427278/170941003-4096d9f6-a553-4b38-83fe-185a30a08d0a.png)
 
-```
-### De multiplexor
-```
+## TIMING DIGRAMS 
+![170916255-2b9313b3-7003-45b0-af29-0ea1e9eb6f3d](https://user-images.githubusercontent.com/93427278/170941098-e096f44b-f6ac-47e3-8838-4824ccee2886.png)
+![170916273-4f32471d-ec85-4068-be76-ee7975d71d74](https://user-images.githubusercontent.com/93427278/170941114-32908a29-9996-42a8-a199-476186b9cc61.png)
+![170916282-36bacb69-cc08-4723-a![170916286-74f5dbef-7892-43d4-a641-f31082f83909](https://user-images.githubusercontent.com/93427278/170941175-0b73177d-f95d-410c-a960-6569f32f14a1.png)
+0f4-32166a36199a](https://user-images.githubusercontent.com/93427278/170941133-8f11b1bd-4e36-48c5-9e36-4c41c08fdf4a.png)
 
+## TRUTH TABLE 
+![170915794-7f0dd830-b58c-4e42-9c4f-8cda27cb58b5](https://user-images.githubusercontent.com/93427278/170941232-ca344308-cd3e-4d7b-89b2-ea0c263f5fe1.png)
+
+### 1X4 DEMULTIPLEXER:
+```
+/*
+Program for flipflops  and verify its truth table in quartus using Verilog programming.
+Developed by: Vishranthi A
+RegisterNumber:  212221230124
+*/
+module demux(I,S0,S1,Y0,Y1,Y2,Y3);
+input I,S0,S1;
+output Y0,Y1,Y2,Y3;
+wire S0C,S1C;
+not(S0C,S0);
+not(S1C,S1);
+and(Y0,I,S0C,S1C);
+and(Y1,I,S0C,S1);
+and(Y2,I,S0,S1C);
+and(Y3,I,S0,S1);
+endmodule
 ```
 
 ## RTL LOGIC  
-
-
-
-
-
-
-
+![170915952-e058801b-a627-481f-bcea-f41e387359fd](https://user-images.githubusercontent.com/93427278/170941394-06d8504a-4516-4281-aa2d-51967e8a995d.png)
 
 ## TIMING DIGRAMS  
-
-
-
-
+![170916003-bd1367e7-c066-43c2-be9d-a5abb2ebbc46](https://user-images.githubusercontent.com/93427278/170941435-9fc58d3e-a1a0-4d83-8175-9597e4be8bf1.png)
 
 ## TRUTH TABLE 
-
-
-
-
-
+![170916077-9e2f1071-941a-481a-a300-b297ae7f43b0](https://user-images.githubusercontent.com/93427278/170941466-d2d32783-7b8f-4b13-88b6-fff20dcb9e13.png)
 
 ## RESULTS 
+Hence 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
