@@ -85,10 +85,10 @@ endmodule
 ![170915735-40d558a0-c952-4e68-965e-a9ea1890d342](https://user-images.githubusercontent.com/93427278/170941003-4096d9f6-a553-4b38-83fe-185a30a08d0a.png)
 
 ## TIMING DIGRAMS 
-![170916255-2b9313b3-7003-45b0-af29-0ea1e9eb6f3d](https://user-images.githubusercontent.com/93427278/170941098-e096f44b-f6ac-47e3-8838-4824ccee2886.png)
-![170916273-4f32471d-ec85-4068-be76-ee7975d71d74](https://user-images.githubusercontent.com/93427278/170941114-32908a29-9996-42a8-a199-476186b9cc61.png)
-![170916282-36bacb69-cc08-4723-a![170916286-74f5dbef-7892-43d4-a641-f31082f83909](https://user-images.githubusercontent.com/93427278/170941175-0b73177d-f95d-410c-a960-6569f32f14a1.png)
-0f4-32166a36199a](https://user-images.githubusercontent.com/93427278/170941133-8f11b1bd-4e36-48c5-9e36-4c41c08fdf4a.png)
+![170916255-2b9313b3-7003-45b0-af29-0ea1e9eb6f3d](https://user-images.githubusercontent.com/93427278/170946737-be2b2a24-338d-49d5-8f46-d84e4cb7fd6a.png)
+![170916273-4f32471d-ec85-4068-be76-ee7975d71d74](https://user-images.githubusercontent.com/93427278/170946752-39f79526-a86c-4085-97b1-920106a4f6a1.png)
+![170916282-36bacb69-cc08-4723-a0f4-32166a36199a](https://user-images.githubusercontent.com/93427278/170946795-b8c2ddb0-2e3f-45c6-ad47-28997b8bfe0f.png)
+![170916286-74f5dbef-7892-43d4-a641-f31082f83909](https://user-images.githubusercontent.com/93427278/170946822-85b7650e-02cc-4be8-ab59-516da6cbc528.png)
 
 ## TRUTH TABLE 
 ![170915794-7f0dd830-b58c-4e42-9c4f-8cda27cb58b5](https://user-images.githubusercontent.com/93427278/170941232-ca344308-cd3e-4d7b-89b2-ea0c263f5fe1.png)
